@@ -37,4 +37,7 @@ class TicTacToe
   def valid_move?(index)
     (0..8).include?(index) && !position_taken?(index)
   end
+  
+  def turn_count
+    @board.select
 end
