@@ -94,20 +94,6 @@ class TicTacToe
       @board[won?[0]]
     end
   end
-  
-  def play
-    puts "Welcome to TicTacToe"
-    display_board
-    
-    until over?
-      turn
-    end
-    
-    if won?
-      puts "Congratulations #{winner}"
-    else if draw?
-      puts "Cat's Game!"
-    end
-  end
+
   
 end
