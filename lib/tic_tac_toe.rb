@@ -33,4 +33,8 @@ class TicTacToe
   def position_taken?(index)
     @board[index] != " " && @board[index] != nil
   end
+  
+  def valid_move?(index)
+    (0..8).include?(index) && !position_taken?(index)
+  end
 end
