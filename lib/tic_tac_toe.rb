@@ -74,4 +74,22 @@ class TicTacToe
     end
     false
   end
+  
+  def full?
+    @board.all? do |index|
+      index != " " && index != nil
+    end
+  end
+  
+  def draw?
+    !won? && full?
+  end
+  
+  def over?
+    won? || draw?
+  end
+  
+  def winner
+    @board[won?[0]]
+  end
 end
