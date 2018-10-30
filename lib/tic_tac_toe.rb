@@ -39,5 +39,8 @@ class TicTacToe
   end
   
   def turn_count
-    @board.select
+    @board.select do |element|
+      element != " " && element != nil
+    end.count
+  end
 end
