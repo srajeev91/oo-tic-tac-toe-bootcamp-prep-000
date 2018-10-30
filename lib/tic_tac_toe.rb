@@ -99,9 +99,7 @@ class TicTacToe
     puts "Welcome to TicTacToe"
     display_board
     
-    until over?
-      turn
-    end
+    turn until over?
     
     if won?
       puts "Congratulations #{winner}"
